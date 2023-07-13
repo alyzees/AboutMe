@@ -6,16 +6,24 @@
 //
 
 import SwiftUI
-
+//hi
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack{
+            Color(hue: 0.778, saturation: 0.319, brightness: 0.94).ignoresSafeArea()
+            ZStack(alignment:.topTrailing){
+                Image("alyzee").resizable().aspectRatio(contentMode: .fit)
+                
+                VStack (alignment: .center, spacing: 10.0){
+                    Text("all about...").font(.title3).multilineTextAlignment(.center)
+                    Text("Alyzee Sosa").font(.title).fontWeight(.heavy).multilineTextAlignment(.center).foregroundColor(.red)
+                }.frame(width: 165.0)
+            }
         }
-        .padding()
+        
+        //.background(Color.blue) ==> probably only takes up space of child elements
+        
+        // end of overall Stack
     }
 }
 
