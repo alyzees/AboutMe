@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//hiiii
+// Hey this is Roni! I was able to accept your invite and making a change on your project, I really don't understand why UGHHH so sorry
 struct ContentView: View {
     
     @State private var darkMegenta = Color(hue: 0.843, saturation: 0.778, brightness: 0.423)
